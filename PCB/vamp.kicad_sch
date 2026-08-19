@@ -267,6 +267,193 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Charleslabs_Parts:SD_Card_Module"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "A"
+				(at -7.62 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SD_Card_Module"
+				(at 10.16 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Charleslabs_Parts:SD_Card_Module"
+				(at 24.13 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at -7.62 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SD_Card_Module_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SD_Card_Module_1_1"
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 3.81 0)
+					(length 2.54)
+					(name "CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 1.27 0)
+					(length 2.54)
+					(name "MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -1.27 0)
+					(length 2.54)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -10.16 -3.81 0)
+					(length 2.54)
+					(name "MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Audio:AudioJack4"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6301,6 +6488,18 @@
 		(uuid "16ce6d39-6ff2-4e89-832f-0fdd13d882b5")
 	)
 	(rectangle
+		(start 251.46 209.55)
+		(end 298.45 245.11)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2c38f1cb-d2cf-4390-8deb-907399b7f18e")
+	)
+	(rectangle
 		(start 70.104 151.638)
 		(end 225.552 210.312)
 		(stroke
@@ -6385,18 +6584,6 @@
 		(uuid "93de8504-0002-438d-b189-9d69f79d3766")
 	)
 	(rectangle
-		(start 68.072 213.106)
-		(end 294.64 282.702)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "a12b0a16-fa46-46e6-84e1-be9f68194686")
-	)
-	(rectangle
 		(start 230.124 131.826)
 		(end 322.834 206.502)
 		(stroke
@@ -6453,6 +6640,17 @@
 			)
 		)
 		(uuid "0e882342-8ff2-48ee-97c6-9208597d5b46")
+	)
+	(text "SD"
+		(exclude_from_sim no)
+		(at 254.508 215.646 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+			)
+			(justify left)
+		)
+		(uuid "118a05c6-b8f5-4c79-9dee-19114c365e70")
 	)
 	(text "MIDIIN1"
 		(exclude_from_sim no)
@@ -6597,13 +6795,13 @@
 		(uuid "02bed0ff-7d19-42a4-b161-a9bd0d5ff10a")
 	)
 	(junction
-		(at 217.17 251.46)
+		(at 199.39 251.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "055a2bf9-b2bf-414d-a7ae-c1ba592ac576")
 	)
 	(junction
-		(at 243.84 254)
+		(at 226.06 254)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0ea74e75-ba39-460e-8539-9f11db946b7d")
@@ -6663,31 +6861,19 @@
 		(uuid "2fec63bd-ebc6-47ca-acab-7de179a4d64b")
 	)
 	(junction
-		(at 217.17 241.3)
+		(at 199.39 241.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "36cd9c9e-6d90-47f7-abbe-33be3bc8c1b3")
 	)
 	(junction
-		(at 123.19 248.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "371461d1-4249-4e50-9783-9109e39f9d80")
-	)
-	(junction
-		(at 181.61 251.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3d9e5765-dc63-410e-b1d4-ceba2f88bd3a")
-	)
-	(junction
-		(at 187.96 264.16)
+		(at 175.26 264.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "47288d63-f986-4cf1-8aa4-2dd3a0d02d98")
 	)
 	(junction
-		(at 262.89 254)
+		(at 245.11 254)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b6663a3-79f1-4c45-bee1-f09a00f30e3c")
@@ -6729,22 +6915,22 @@
 		(uuid "5bbbde9d-e067-422a-a879-0ce04fa15fc8")
 	)
 	(junction
+		(at 156.21 251.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5cc0e226-8fe6-46c6-8115-e5b8d5f98527")
+	)
+	(junction
 		(at 368.3 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6638c7f7-c1b6-478f-a0da-89f38f4ffde8")
 	)
 	(junction
-		(at 193.04 251.46)
+		(at 180.34 251.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "69c51952-2153-4ead-a581-294af971f2be")
-	)
-	(junction
-		(at 165.1 251.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "713b3041-b8ee-4c2e-9b3b-3eb4ed924cd1")
 	)
 	(junction
 		(at 190.5 134.62)
@@ -6765,7 +6951,13 @@
 		(uuid "8802cda8-8979-4a0e-90a5-f6038cbdc8ea")
 	)
 	(junction
-		(at 243.84 241.3)
+		(at 123.19 248.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d1128ae-97d4-424f-8e70-0a3d3e970833")
+	)
+	(junction
+		(at 226.06 241.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a61493f-b8b4-40cf-997f-63c8d551a40f")
@@ -6811,6 +7003,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bd0c97c8-1d21-4cde-8aad-ba0875661118")
+	)
+	(junction
+		(at 168.91 251.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8bb71a0-c934-44b9-b9a5-d5f2b6dde663")
 	)
 	(junction
 		(at 154.94 132.08)
@@ -6869,7 +7067,7 @@
 		(uuid "13f8dc97-6e6e-4403-8f22-3f954ded29c4")
 	)
 	(no_connect
-		(at 149.86 241.3)
+		(at 144.78 241.3)
 		(uuid "253a7b07-4394-45a6-9cbc-1b8916849957")
 	)
 	(no_connect
@@ -6941,7 +7139,7 @@
 		(uuid "8036d853-0c7b-4913-9667-15e20db7c9fd")
 	)
 	(no_connect
-		(at 149.86 261.62)
+		(at 144.78 261.62)
 		(uuid "81772940-f4e6-4a83-a9ae-75453825ae03")
 	)
 	(no_connect
@@ -6953,24 +7151,8 @@
 		(uuid "91588557-6868-435d-82e5-bc8d19d171b3")
 	)
 	(no_connect
-		(at 85.09 92.71)
-		(uuid "92367a9b-5dcf-41e8-84c1-52f53b466fb9")
-	)
-	(no_connect
-		(at 85.09 90.17)
-		(uuid "9be852c7-df6f-47f4-8156-55f2cef6b4c7")
-	)
-	(no_connect
-		(at 85.09 85.09)
-		(uuid "a2392be1-0410-4dcf-a2f5-0ede3973257d")
-	)
-	(no_connect
 		(at 31.75 69.85)
 		(uuid "a63a715f-d106-43d4-bcf2-8b65d74a8969")
-	)
-	(no_connect
-		(at 85.09 87.63)
-		(uuid "a848473c-1be8-4617-8c0f-10ebca7315fc")
 	)
 	(no_connect
 		(at 383.54 55.88)
@@ -7013,7 +7195,7 @@
 		(uuid "dc9d59cd-090c-4d4e-b3df-de08218249eb")
 	)
 	(no_connect
-		(at 229.87 243.84)
+		(at 212.09 243.84)
 		(uuid "e33e5748-d547-4f39-aca7-4bc13c1c4f61")
 	)
 	(no_connect
@@ -7021,7 +7203,7 @@
 		(uuid "e54f9788-5f64-4e4c-b296-3de69f291394")
 	)
 	(no_connect
-		(at 229.87 264.16)
+		(at 212.09 264.16)
 		(uuid "e6b270d5-4ed1-4358-b6be-5e2b0f77c74d")
 	)
 	(no_connect
@@ -7148,7 +7330,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 232.41) (xy 243.84 241.3)
+			(xy 226.06 232.41) (xy 226.06 241.3)
 		)
 		(stroke
 			(width 0)
@@ -7165,6 +7347,16 @@
 			(type default)
 		)
 		(uuid "09c7202d-5f69-4793-9dde-45d5ea54fda3")
+	)
+	(wire
+		(pts
+			(xy 86.36 87.63) (xy 85.09 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a8fad52-5ae7-471a-8fee-aae834d348a9")
 	)
 	(wire
 		(pts
@@ -7205,6 +7397,16 @@
 			(type default)
 		)
 		(uuid "0d3f2eaf-886f-4064-8a00-8ad2793ecbd1")
+	)
+	(wire
+		(pts
+			(xy 86.36 85.09) (xy 85.09 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d52d018-d4d1-4c85-b614-b5c9c9bcd5e6")
 	)
 	(wire
 		(pts
@@ -7348,7 +7550,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 251.46) (xy 196.85 251.46)
+			(xy 180.34 251.46) (xy 184.15 251.46)
 		)
 		(stroke
 			(width 0)
@@ -7385,6 +7587,16 @@
 			(type default)
 		)
 		(uuid "1b24c701-1dae-42dc-9646-7083b5fe7819")
+	)
+	(polyline
+		(pts
+			(xy 272.542 247.142) (xy 246.888 247.142)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cfc6d7f-a607-461f-8efa-bcf89077397a")
 	)
 	(wire
 		(pts
@@ -7466,6 +7678,16 @@
 		)
 		(uuid "28e1a8d7-573a-4e24-9904-3a7e9de78d29")
 	)
+	(polyline
+		(pts
+			(xy 68.834 212.852) (xy 246.888 212.852)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28f50136-59ab-45e3-be2a-9048e5acf5f8")
+	)
 	(wire
 		(pts
 			(xy 336.55 128.27) (xy 347.98 128.27)
@@ -7478,7 +7700,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 251.46) (xy 181.61 251.46)
+			(xy 180.34 251.46) (xy 168.91 251.46)
 		)
 		(stroke
 			(width 0)
@@ -7538,7 +7760,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 241.3) (xy 243.84 254)
+			(xy 226.06 241.3) (xy 226.06 254)
 		)
 		(stroke
 			(width 0)
@@ -7568,7 +7790,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 251.46) (xy 165.1 251.46)
+			(xy 154.94 251.46) (xy 156.21 251.46)
 		)
 		(stroke
 			(width 0)
@@ -7578,7 +7800,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 248.92) (xy 139.7 248.92)
+			(xy 123.19 248.92) (xy 134.62 248.92)
 		)
 		(stroke
 			(width 0)
@@ -7615,6 +7837,16 @@
 			(type default)
 		)
 		(uuid "301ecdcd-3a86-4946-a094-b905ac6ae386")
+	)
+	(wire
+		(pts
+			(xy 257.81 228.6) (xy 262.89 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30688964-841b-46f4-8d30-13622e8ff860")
 	)
 	(wire
 		(pts
@@ -7658,6 +7890,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 226.06) (xy 262.89 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3399b528-0bb0-41fa-b07a-63800985ac1e")
+	)
+	(wire
+		(pts
 			(xy 267.97 46.99) (xy 265.43 46.99)
 		)
 		(stroke
@@ -7665,6 +7907,16 @@
 			(type default)
 		)
 		(uuid "344a2c45-92ae-4bc1-a5e5-cf25613c1337")
+	)
+	(polyline
+		(pts
+			(xy 272.542 281.178) (xy 272.542 247.142)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "361a74af-0dc8-460c-ace0-a2a7bc07d049")
 	)
 	(wire
 		(pts
@@ -7828,7 +8080,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 264.16) (xy 193.04 262.89)
+			(xy 180.34 264.16) (xy 180.34 262.89)
 		)
 		(stroke
 			(width 0)
@@ -7838,7 +8090,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 241.3) (xy 217.17 251.46)
+			(xy 199.39 241.3) (xy 199.39 251.46)
 		)
 		(stroke
 			(width 0)
@@ -7898,7 +8150,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 269.24) (xy 213.36 269.24)
+			(xy 107.95 269.24) (xy 195.58 269.24)
 		)
 		(stroke
 			(width 0)
@@ -8028,7 +8280,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 265.43) (xy 165.1 265.43)
+			(xy 134.62 265.43) (xy 156.21 265.43)
 		)
 		(stroke
 			(width 0)
@@ -8198,7 +8450,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 254) (xy 243.84 254)
+			(xy 222.25 254) (xy 226.06 254)
 		)
 		(stroke
 			(width 0)
@@ -8336,6 +8588,16 @@
 		)
 		(uuid "6354ef5a-84f1-44ee-99ba-a67a22555907")
 	)
+	(polyline
+		(pts
+			(xy 68.834 281.178) (xy 272.542 281.178)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63e09412-7c8c-4c66-b685-1d21de9a675c")
+	)
 	(wire
 		(pts
 			(xy 267.97 96.52) (xy 265.43 96.52)
@@ -8365,16 +8627,6 @@
 			(type default)
 		)
 		(uuid "66c6b54f-b9a8-44ca-991b-90a65487a3f1")
-	)
-	(wire
-		(pts
-			(xy 201.93 251.46) (xy 207.01 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67450898-a43b-4a38-9863-74c979d0507c")
 	)
 	(wire
 		(pts
@@ -8468,13 +8720,33 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 232.41) (xy 217.17 241.3)
+			(xy 199.39 232.41) (xy 199.39 241.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6e7631c1-9174-414e-9cf0-f56be8905858")
+	)
+	(wire
+		(pts
+			(xy 86.36 92.71) (xy 85.09 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ec0f364-e63b-45a3-84b8-f0f9411fabbc")
+	)
+	(wire
+		(pts
+			(xy 86.36 90.17) (xy 85.09 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fe223be-1d5d-4332-8d54-ccb548506113")
 	)
 	(wire
 		(pts
@@ -8688,7 +8960,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 251.46) (xy 181.61 255.27)
+			(xy 168.91 251.46) (xy 168.91 255.27)
 		)
 		(stroke
 			(width 0)
@@ -8728,7 +9000,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 232.41) (xy 217.17 232.41)
+			(xy 203.2 232.41) (xy 199.39 232.41)
 		)
 		(stroke
 			(width 0)
@@ -8745,16 +9017,6 @@
 			(type default)
 		)
 		(uuid "7dcd9700-4074-44cf-8af8-d1ffde83d2d9")
-	)
-	(wire
-		(pts
-			(xy 165.1 251.46) (xy 170.18 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ec0f36d-ac93-43b7-8bf8-10c2dcbd16d2")
 	)
 	(wire
 		(pts
@@ -8818,13 +9080,23 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 241.3) (xy 217.17 241.3)
+			(xy 201.93 241.3) (xy 199.39 241.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "859d3ae1-f8e1-499e-8d3b-739759d98ec0")
+	)
+	(wire
+		(pts
+			(xy 156.21 251.46) (xy 157.48 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "864a4f64-35e7-4fd9-a318-49e35bd96657")
 	)
 	(wire
 		(pts
@@ -9088,7 +9360,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 255.27) (xy 193.04 251.46)
+			(xy 180.34 255.27) (xy 180.34 251.46)
 		)
 		(stroke
 			(width 0)
@@ -9138,7 +9410,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 257.81) (xy 262.89 254)
+			(xy 245.11 257.81) (xy 245.11 254)
 		)
 		(stroke
 			(width 0)
@@ -9148,7 +9420,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 232.41) (xy 243.84 232.41)
+			(xy 208.28 232.41) (xy 226.06 232.41)
 		)
 		(stroke
 			(width 0)
@@ -9248,7 +9520,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 251.46) (xy 219.71 251.46)
+			(xy 199.39 251.46) (xy 201.93 251.46)
 		)
 		(stroke
 			(width 0)
@@ -9275,16 +9547,6 @@
 			(type default)
 		)
 		(uuid "a68aeab2-b320-44d5-8f63-210609eebc82")
-	)
-	(wire
-		(pts
-			(xy 139.7 254) (xy 137.16 254)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6ad17aa-7d16-48cd-826c-0b600958c240")
 	)
 	(wire
 		(pts
@@ -9328,7 +9590,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 269.24) (xy 213.36 256.54)
+			(xy 195.58 269.24) (xy 195.58 256.54)
 		)
 		(stroke
 			(width 0)
@@ -9378,7 +9640,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 241.3) (xy 227.33 241.3)
+			(xy 226.06 241.3) (xy 209.55 241.3)
 		)
 		(stroke
 			(width 0)
@@ -9478,7 +9740,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 254) (xy 250.19 254)
+			(xy 226.06 254) (xy 232.41 254)
 		)
 		(stroke
 			(width 0)
@@ -9528,7 +9790,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 270.51) (xy 187.96 264.16)
+			(xy 175.26 270.51) (xy 175.26 264.16)
 		)
 		(stroke
 			(width 0)
@@ -9538,7 +9800,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 254) (xy 269.24 254)
+			(xy 245.11 254) (xy 251.46 254)
 		)
 		(stroke
 			(width 0)
@@ -9578,7 +9840,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 265.43) (xy 165.1 251.46)
+			(xy 156.21 265.43) (xy 156.21 251.46)
 		)
 		(stroke
 			(width 0)
@@ -9608,6 +9870,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 223.52) (xy 262.89 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1bc3bcf-0d79-449e-bede-491b969a881e")
+	)
+	(wire
+		(pts
 			(xy 330.2 128.27) (xy 336.55 128.27)
 		)
 		(stroke
@@ -9628,7 +9900,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 254) (xy 257.81 254)
+			(xy 245.11 254) (xy 240.03 254)
 		)
 		(stroke
 			(width 0)
@@ -9658,7 +9930,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 256.54) (xy 219.71 256.54)
+			(xy 195.58 256.54) (xy 201.93 256.54)
 		)
 		(stroke
 			(width 0)
@@ -9698,16 +9970,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 251.46) (xy 181.61 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c68a9dc9-e803-4aca-866c-a5ab851bf386")
-	)
-	(wire
-		(pts
 			(xy 146.05 172.72) (xy 140.97 172.72)
 		)
 		(stroke
@@ -9715,6 +9977,16 @@
 			(type default)
 		)
 		(uuid "c691e42f-58f0-42c4-8b55-fb2028942f65")
+	)
+	(wire
+		(pts
+			(xy 257.81 231.14) (xy 262.89 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6ae9b85-c063-4f0f-b431-e8e269cb04d4")
 	)
 	(wire
 		(pts
@@ -9818,7 +10090,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 264.16) (xy 193.04 264.16)
+			(xy 175.26 264.16) (xy 180.34 264.16)
 		)
 		(stroke
 			(width 0)
@@ -9848,7 +10120,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 264.16) (xy 187.96 264.16)
+			(xy 168.91 264.16) (xy 175.26 264.16)
 		)
 		(stroke
 			(width 0)
@@ -9888,6 +10160,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 251.46) (xy 168.91 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc1fffb7-4745-4fb2-b1cb-d77122839ad7")
+	)
+	(wire
+		(pts
 			(xy 140.97 186.69) (xy 146.05 186.69)
 		)
 		(stroke
@@ -9898,7 +10180,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 254) (xy 137.16 265.43)
+			(xy 134.62 254) (xy 134.62 265.43)
 		)
 		(stroke
 			(width 0)
@@ -9908,7 +10190,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 251.46) (xy 217.17 251.46)
+			(xy 196.85 251.46) (xy 199.39 251.46)
 		)
 		(stroke
 			(width 0)
@@ -10146,6 +10428,16 @@
 		)
 		(uuid "f0b45b53-7ecb-4daf-a022-46faa94c0a72")
 	)
+	(polyline
+		(pts
+			(xy 68.834 212.852) (xy 68.834 281.178)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1adee6b-56a3-4a39-abc5-3b173e185a1e")
+	)
 	(wire
 		(pts
 			(xy 240.03 176.53) (xy 241.3 176.53)
@@ -10218,13 +10510,23 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 269.24) (xy 262.89 262.89)
+			(xy 245.11 269.24) (xy 245.11 262.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fa743344-b15d-418a-bf9d-25d049b003fd")
+	)
+	(polyline
+		(pts
+			(xy 246.888 247.142) (xy 246.888 212.852)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb675c45-4659-4b2a-81a6-8bbfd9db739e")
 	)
 	(wire
 		(pts
@@ -10248,7 +10550,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 260.35) (xy 181.61 264.16)
+			(xy 168.91 260.35) (xy 168.91 264.16)
 		)
 		(stroke
 			(width 0)
@@ -10426,6 +10728,16 @@
 		)
 		(uuid "165121f0-c907-4ba7-9afd-32690778ce9d")
 	)
+	(label "CS"
+		(at 257.81 223.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b0b02d4-8ef0-45a8-a53f-d32a77d2a9c6")
+	)
 	(label "ROT4A"
 		(at 242.57 113.03 0)
 		(effects
@@ -10485,6 +10797,26 @@
 			(justify left bottom)
 		)
 		(uuid "25c0868e-7581-43b2-9099-277278278bf1")
+	)
+	(label "CS"
+		(at 86.36 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "26d28867-d697-49a1-9146-6cfd50abb65f")
+	)
+	(label "CLK"
+		(at 257.81 228.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2d9bf334-47cd-4857-adea-bbb607c817a8")
 	)
 	(label "IN2-"
 		(at 48.26 265.43 0)
@@ -10666,6 +10998,16 @@
 		)
 		(uuid "57e3048f-5a0b-44dd-b353-ab5d9789426d")
 	)
+	(label "CLK"
+		(at 86.36 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "590fc532-2803-417d-97c8-ba92a48c1ccc")
+	)
 	(label "RST"
 		(at 353.06 66.04 0)
 		(effects
@@ -10685,6 +11027,16 @@
 			(justify left bottom)
 		)
 		(uuid "5dab3625-382f-49bf-aab8-f346359a8a02")
+	)
+	(label "MOSI"
+		(at 86.36 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "628db138-11cf-44d8-820d-f2cfdfa07189")
 	)
 	(label "RST"
 		(at 303.53 66.04 0)
@@ -10787,7 +11139,7 @@
 		(uuid "76049865-a9f3-4f39-a060-bc12fe2138b1")
 	)
 	(label "AUDIO_IN_2"
-		(at 269.24 254 0)
+		(at 251.46 254 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10826,6 +11178,16 @@
 		)
 		(uuid "7cbcd223-2f6a-429c-95a3-26ee38581061")
 	)
+	(label "MISO"
+		(at 86.36 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7ccd046e-9d14-4037-a61e-e92c5d4c2050")
+	)
 	(label "SW5"
 		(at 181.61 36.83 0)
 		(effects
@@ -10835,6 +11197,16 @@
 			(justify left bottom)
 		)
 		(uuid "7d410b09-6702-4145-9cca-48a127bbaef1")
+	)
+	(label "MISO"
+		(at 257.81 231.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8272bda3-b8a8-429c-bcce-6f31625dba7f")
 	)
 	(label "AREF_AUDIO_BIAS"
 		(at 139.7 137.16 0)
@@ -11146,6 +11518,16 @@
 		)
 		(uuid "caed765c-d4d7-467a-9a46-99e4f1390d63")
 	)
+	(label "MOSI"
+		(at 257.81 226.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cced3357-41c0-4ca1-8923-bdca8b79bbe4")
+	)
 	(label "SDA"
 		(at 353.06 45.72 0)
 		(effects
@@ -11396,7 +11778,7 @@
 			(uuid "638526ad-ecf5-494d-a577-d3006cae880c")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR022")
 					(unit 1)
@@ -11474,7 +11856,7 @@
 			(uuid "8da55c80-82e3-4599-a77c-cbe95955b754")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR028")
 					(unit 1)
@@ -11552,7 +11934,7 @@
 			(uuid "1af173e3-c908-49b6-9e27-e96e598e5444")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR061")
 					(unit 1)
@@ -11630,7 +12012,7 @@
 			(uuid "07a87923-99ce-4330-9b7f-0e3b066a3db5")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR01")
 					(unit 1)
@@ -11767,7 +12149,7 @@
 			(uuid "a4193222-ffa6-4056-9540-eeaf601cb29b")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "U4")
 					(unit 1)
@@ -11846,7 +12228,7 @@
 			(uuid "7defe4bb-2280-415c-b145-4a3862c39f59")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R21")
 					(unit 1)
@@ -11924,7 +12306,7 @@
 			(uuid "c6669054-67b3-4bfb-baa2-91cae85570be")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR018")
 					(unit 1)
@@ -12002,7 +12384,7 @@
 			(uuid "a02388ba-671d-4922-b382-12bc49d46f29")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR050")
 					(unit 1)
@@ -12080,7 +12462,7 @@
 			(uuid "bfc583b4-5254-4926-89bc-718130881edf")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR032")
 					(unit 1)
@@ -12167,7 +12549,7 @@
 			(uuid "7d8e937e-7ac9-4e97-aa81-84c5517913c2")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "LINEIN1")
 					(unit 1)
@@ -12245,7 +12627,7 @@
 			(uuid "46ff3d10-f53e-44ea-94a3-8ed6e332d105")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR053")
 					(unit 1)
@@ -12324,7 +12706,7 @@
 			(uuid "91ca04b4-d888-44e4-a02a-134db61d7ceb")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C8")
 					(unit 1)
@@ -12402,7 +12784,7 @@
 			(uuid "4d8b329a-9deb-4c5c-9e59-73cfabf8ac71")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR055")
 					(unit 1)
@@ -12481,7 +12863,7 @@
 			(uuid "e840e44d-64d3-4199-bd6c-ddf299ab8c49")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R4")
 					(unit 1)
@@ -12561,7 +12943,7 @@
 			(uuid "7678c665-0c6d-4188-8501-9dd9dcdff5ee")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW6")
 					(unit 1)
@@ -12648,7 +13030,7 @@
 			(uuid "ef68af6f-112c-47ad-bdba-46ce4f504208")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "HEADOUT1")
 					(unit 1)
@@ -12778,7 +13160,7 @@
 			(uuid "21762c98-e8ff-4f5d-aa49-622400648f89")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R23")
 					(unit 1)
@@ -12943,7 +13325,7 @@
 			(uuid "c57867d4-e623-4692-8725-df51b0166c3f")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "U6")
 					(unit 1)
@@ -13021,7 +13403,7 @@
 			(uuid "79b279da-f4d2-4699-8c2a-f9c8f9b8e6b2")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR019")
 					(unit 1)
@@ -13031,7 +13413,7 @@
 	)
 	(symbol
 		(lib_id "easyeda2kicad:OPA1652AIDR")
-		(at 229.87 254 0)
+		(at 212.09 254 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13042,7 +13424,7 @@
 		(fields_autoplaced yes)
 		(uuid "180f8411-83bb-4e7a-98c0-88f6bf14195d")
 		(property "Reference" "U8"
-			(at 242.57 247.5798 0)
+			(at 224.79 247.5798 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13052,7 +13434,7 @@
 			)
 		)
 		(property "Value" "OPA1652AIDR"
-			(at 242.57 250.1198 0)
+			(at 224.79 250.1198 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13062,7 +13444,7 @@
 			)
 		)
 		(property "Footprint" "easyeda2kicad:SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL"
-			(at 229.87 271.78 0)
+			(at 212.09 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13073,7 +13455,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Audio-OpAmps_TI_OPA1652AIDR_OPA1652AIDR_C30025.html"
-			(at 229.87 274.32 0)
+			(at 212.09 274.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13084,7 +13466,7 @@
 			)
 		)
 		(property "Description" "Sound Plus Low Noise and Distortion, General-Purpose, FET-Input Audio Operational Amplifier, 4.5 to 36 V, -40 to 85 degC, 8-pin SOIC (D8), Green (RoHS  no SbBr)"
-			(at 229.87 254 0)
+			(at 212.09 254 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13095,7 +13477,7 @@
 			)
 		)
 		(property "Manufacturer" "TI(德州仪器)"
-			(at 229.87 276.86 0)
+			(at 212.09 276.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13106,7 +13488,7 @@
 			)
 		)
 		(property "MPN" "OPA1652AIDR"
-			(at 229.87 279.4 0)
+			(at 212.09 279.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13117,7 +13499,7 @@
 			)
 		)
 		(property "LCSC Part" "C30025"
-			(at 229.87 281.94 0)
+			(at 212.09 281.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13158,7 +13540,7 @@
 			(uuid "851ec746-7918-4d3c-ad69-b9b4e972e5be")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "U8")
 					(unit 2)
@@ -13237,7 +13619,7 @@
 			(uuid "5e122380-6d7f-42fe-a005-a13d3247f3c9")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C11")
 					(unit 1)
@@ -13323,7 +13705,7 @@
 			(uuid "3c94d2e2-486d-4053-ad08-b8c3524c489b")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "INSTIN1")
 					(unit 1)
@@ -13401,7 +13783,7 @@
 			(uuid "395de97a-39b6-4210-bc8c-a36038500c0d")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR041")
 					(unit 1)
@@ -13479,7 +13861,7 @@
 			(uuid "4d57ecce-a139-404b-8818-062fc1f12bfa")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR066")
 					(unit 1)
@@ -13559,7 +13941,7 @@
 			(uuid "b96c0bcc-a9ca-422c-a7fb-29bdfbd2e0ee")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C10")
 					(unit 1)
@@ -13650,7 +14032,7 @@
 			(uuid "e92ca2c9-aa0b-4f5c-9ffa-5e12e46378d6")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "U9")
 					(unit 1)
@@ -13730,7 +14112,7 @@
 			(uuid "cf1ea60c-96af-435d-944d-8d4bce436a7b")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R26")
 					(unit 1)
@@ -13740,7 +14122,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Resistor_AKL:R_0603")
-		(at 173.99 251.46 90)
+		(at 161.29 251.46 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13750,7 +14132,7 @@
 		(dnp no)
 		(uuid "25a78616-34fa-4880-bea8-5602fcc6b2bf")
 		(property "Reference" "R8"
-			(at 173.99 246.888 90)
+			(at 161.29 246.888 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13760,7 +14142,7 @@
 			)
 		)
 		(property "Value" "3.3k"
-			(at 173.99 249.428 90)
+			(at 161.29 249.428 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13770,7 +14152,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0603_1608Metric"
-			(at 185.42 251.46 0)
+			(at 172.72 251.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13781,7 +14163,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 251.46 0)
+			(at 161.29 251.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13792,7 +14174,7 @@
 			)
 		)
 		(property "Description" "SMD 0603 Chip Resistor, European Symbol, Alternate KiCad Library"
-			(at 173.99 251.46 0)
+			(at 161.29 251.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13809,7 +14191,7 @@
 			(uuid "143cdadb-9f64-4c6e-a968-3ca2a5812d8d")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R8")
 					(unit 1)
@@ -13896,7 +14278,7 @@
 			(uuid "6767b4d8-272f-4f8b-a4c1-efd389e80e60")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "LINEOUT1")
 					(unit 1)
@@ -13976,7 +14358,7 @@
 			(uuid "ba46e6c1-282c-4980-a3cf-7b684a70d025")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C12")
 					(unit 1)
@@ -14054,7 +14436,7 @@
 			(uuid "abfb3d5f-ebe8-4b87-965e-2c1ab9981b19")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR063")
 					(unit 1)
@@ -14132,7 +14514,7 @@
 			(uuid "1324df0e-6586-4505-893f-d0a84cc113c4")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR030")
 					(unit 1)
@@ -14221,7 +14603,7 @@
 			(uuid "bbf40e81-ba49-4a43-8741-e8b5bde1c363")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW20")
 					(unit 1)
@@ -14301,7 +14683,7 @@
 			(uuid "229dcd8f-d346-431c-97d6-2c56cd28a91c")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW8")
 					(unit 1)
@@ -14379,7 +14761,7 @@
 			(uuid "8ddedaef-361c-4387-b764-fe7cc498e279")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR069")
 					(unit 1)
@@ -14459,7 +14841,7 @@
 			(uuid "e8178801-c390-4700-8f70-d3854eb60330")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R1")
 					(unit 1)
@@ -14538,7 +14920,7 @@
 			(uuid "ad93db3a-210f-46a5-bed0-882142a00e89")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R24")
 					(unit 1)
@@ -14737,7 +15119,7 @@
 			(uuid "91438d74-5cbc-4702-85e1-b5d043254321")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "U1")
 					(unit 1)
@@ -14815,7 +15197,7 @@
 			(uuid "7b24ba99-af5d-4034-a9af-b750a6136805")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR027")
 					(unit 1)
@@ -14894,7 +15276,7 @@
 			(uuid "b3dda209-38ba-4bad-9994-f63d291a06a6")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R3")
 					(unit 1)
@@ -14974,7 +15356,7 @@
 			(uuid "4b6bec2d-ba84-4821-a8cb-445bd8fb8951")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C18")
 					(unit 1)
@@ -15052,7 +15434,7 @@
 			(uuid "c2c0f8a6-b1d6-4735-993e-8ef55d10abfc")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR013")
 					(unit 1)
@@ -15130,7 +15512,7 @@
 			(uuid "9f229a08-7a00-40cf-b938-31f978b54b1c")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR07")
 					(unit 1)
@@ -15208,7 +15590,7 @@
 			(uuid "485861de-7ee6-46ad-baa3-37b1516f72cb")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR06")
 					(unit 1)
@@ -15289,7 +15671,7 @@
 			(uuid "c241a1c9-1fc6-4ec9-9f4e-395941f3ce7a")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C24")
 					(unit 1)
@@ -15367,7 +15749,7 @@
 			(uuid "cbd27a43-001b-410b-b6e1-24bb165df7ab")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR02")
 					(unit 1)
@@ -15447,7 +15829,7 @@
 			(uuid "6416f6cf-fc9a-4a26-9eb2-744714600ff5")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW4")
 					(unit 1)
@@ -15525,7 +15907,7 @@
 			(uuid "b391e9af-d8e4-4a8d-a451-53f33d597f9f")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR040")
 					(unit 1)
@@ -15604,9 +15986,87 @@
 			(uuid "c456fe18-6bfc-4819-aaa6-b7d5e7db2a42")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SparkFun-PowerSymbol:3.3V")
+		(at 273.05 217.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45bd7547-0192-42e8-b7db-d7e588ed32a5")
+		(property "Reference" "#PWR070"
+			(at 273.05 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 273.05 213.36 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.05 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"3.3V\""
+			(at 273.05 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb088a4d-8f2f-422d-842d-440153d94208")
+		)
+		(instances
+			(project "vamp"
+				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -15683,7 +16143,7 @@
 			(uuid "b6999d06-7f7c-40ad-9e99-10a18732617d")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R6")
 					(unit 1)
@@ -15761,7 +16221,7 @@
 			(uuid "e7c5aea0-98eb-41d9-b175-2bbd05f75b8f")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#FLG01")
 					(unit 1)
@@ -15839,7 +16299,7 @@
 			(uuid "8810a799-6761-40a3-b7c0-54e32a4b7cbf")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR043")
 					(unit 1)
@@ -15917,7 +16377,7 @@
 			(uuid "627e1d9c-1fc7-4502-84cd-6898c68ad635")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR044")
 					(unit 1)
@@ -15998,7 +16458,7 @@
 			(uuid "dd548913-0aef-4e13-990b-8df3081f38a9")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "D1")
 					(unit 1)
@@ -16077,7 +16537,7 @@
 			(uuid "bd209658-80a7-4f30-b0b2-384e558bb282")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R25")
 					(unit 1)
@@ -16163,7 +16623,7 @@
 			(uuid "e512bd3a-5a5f-4448-b151-dd15379a9d32")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "MIDIIN1")
 					(unit 1)
@@ -16244,7 +16704,7 @@
 			(uuid "0a82ce90-77d8-483a-8f9a-d829b68526e2")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R20")
 					(unit 1)
@@ -16322,7 +16782,7 @@
 			(uuid "6e077be2-f85a-4e6c-b5dd-832b0db61a13")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR014")
 					(unit 1)
@@ -16400,7 +16860,7 @@
 			(uuid "56ab46f0-83ba-48ca-8b1e-f0e68212a800")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR09")
 					(unit 1)
@@ -16409,8 +16869,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_SL_Devices:Capacitor_NP")
-		(at 199.39 251.46 180)
+		(lib_id "power:GND")
+		(at 273.05 237.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16419,9 +16879,10 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "593a7510-0e11-481d-b984-8dca091d7ce8")
-		(property "Reference" "C15"
-			(at 199.39 243.84 0)
+		(uuid "58e5471f-1f12-4b92-94c6-75f651dc9c22")
+		(property "Reference" "#PWR071"
+			(at 273.05 243.84 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16430,8 +16891,8 @@
 				)
 			)
 		)
-		(property "Value" "10uF"
-			(at 199.39 246.38 0)
+		(property "Value" "GND"
+			(at 273.05 242.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16440,8 +16901,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 199.39 247.65 0)
+		(property "Footprint" ""
+			(at 273.05 237.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16452,7 +16913,84 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 199.39 251.46 0)
+			(at 273.05 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 273.05 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9c029c63-b53c-4ba8-8c47-6f664d37cc34")
+		)
+		(instances
+			(project "vamp"
+				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
+					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SL_Devices:Capacitor_NP")
+		(at 186.69 251.46 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "593a7510-0e11-481d-b984-8dca091d7ce8")
+		(property "Reference" "C15"
+			(at 186.69 243.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 186.69 246.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 186.69 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 251.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16463,7 +17001,7 @@
 			)
 		)
 		(property "Description" "Unpolarized Capacitor"
-			(at 199.39 251.46 0)
+			(at 186.69 251.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16480,7 +17018,7 @@
 			(uuid "dd84ab6a-2915-4ab6-b031-245bf51c93cc")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C15")
 					(unit 1)
@@ -16560,7 +17098,7 @@
 			(uuid "bc07cbd7-80df-4e06-8da7-66ca17a28f3d")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW16")
 					(unit 1)
@@ -16649,7 +17187,7 @@
 			(uuid "5cc2028f-1ddc-479d-9d4c-a73d051e5363")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW17")
 					(unit 1)
@@ -16726,7 +17264,7 @@
 			(uuid "64bc0e74-adc7-414e-b337-498a0ebdf60b")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR026")
 					(unit 1)
@@ -16806,7 +17344,7 @@
 			(uuid "60710ac6-53cf-4601-822b-1c7ebaee86cd")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C23")
 					(unit 1)
@@ -16884,7 +17422,7 @@
 			(uuid "6b730026-151d-4621-ae25-fe1258a5379a")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR062")
 					(unit 1)
@@ -16964,7 +17502,7 @@
 			(uuid "e8837998-9745-4262-87d9-762b556aa1fa")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C22")
 					(unit 1)
@@ -17042,7 +17580,7 @@
 			(uuid "b884aae8-a2d6-4424-baec-933a5d9b3f05")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR033")
 					(unit 1)
@@ -17123,7 +17661,7 @@
 			(uuid "3b97e92e-358d-47fc-980b-8cb01bfeb306")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C27")
 					(unit 1)
@@ -17201,7 +17739,7 @@
 			(uuid "5b629e88-b6b3-48f0-b284-5c6dd63a4672")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR054")
 					(unit 1)
@@ -17281,7 +17819,7 @@
 			(uuid "7244680a-1f29-497e-a037-6f8a302faa15")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C19")
 					(unit 1)
@@ -17291,7 +17829,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Resistor_AKL:R_0603")
-		(at 193.04 259.08 0)
+		(at 180.34 259.08 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17301,7 +17839,7 @@
 		(dnp no)
 		(uuid "68319f84-d10b-4a23-9c56-7a340689b77c")
 		(property "Reference" "R9"
-			(at 197.612 259.08 90)
+			(at 184.912 259.08 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17311,7 +17849,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 195.072 259.08 90)
+			(at 182.372 259.08 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17321,7 +17859,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0603_1608Metric"
-			(at 193.04 270.51 0)
+			(at 180.34 270.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17332,7 +17870,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.04 259.08 0)
+			(at 180.34 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17343,7 +17881,7 @@
 			)
 		)
 		(property "Description" "SMD 0603 Chip Resistor, European Symbol, Alternate KiCad Library"
-			(at 193.04 259.08 0)
+			(at 180.34 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17360,7 +17898,7 @@
 			(uuid "ff0189a5-7162-4d7c-aab8-7723aafd1333")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R9")
 					(unit 1)
@@ -17439,7 +17977,7 @@
 			(uuid "92be95fc-e757-4c1a-bfc7-5838c6da2c5e")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R13")
 					(unit 1)
@@ -17519,7 +18057,7 @@
 			(uuid "d19b3d17-dd43-4e29-ab9e-3d764344ef39")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW1")
 					(unit 1)
@@ -17596,7 +18134,7 @@
 			(uuid "c0650a35-80c8-4c05-8a68-1f61075260d2")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR077")
 					(unit 1)
@@ -17674,7 +18212,7 @@
 			(uuid "84163fc4-8c75-4912-b6d4-db36d68250a0")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR051")
 					(unit 1)
@@ -17810,10 +18348,104 @@
 			(uuid "a4193222-ffa6-4056-9540-eeaf601cb29c")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "U4")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Charleslabs_Parts:SD_Card_Module")
+		(at 273.05 227.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70f278f3-afc5-4072-b36e-902dc608e342")
+		(property "Reference" "A1"
+			(at 281.94 226.0599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SD_Card_Module"
+			(at 281.94 228.5999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Charleslabs_Parts:SD_Card_Module"
+			(at 297.18 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 273.05 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "79394794-2bdc-4c28-9ff5-1ce42b009042")
+		)
+		(pin "6"
+			(uuid "0ae13b9c-95dd-43de-b9cf-7bd4c0cbf80d")
+		)
+		(pin "1"
+			(uuid "3fa8ec0b-0972-41bb-bd4d-b82f6f60815b")
+		)
+		(pin "3"
+			(uuid "7efe91b9-5684-4c8b-8620-af4e2782144b")
+		)
+		(pin "5"
+			(uuid "06d3ff11-576c-43f9-804d-3e2fb07aadf2")
+		)
+		(pin "4"
+			(uuid "b97e1935-d003-4dc4-bed6-fc0f94cc6780")
+		)
+		(instances
+			(project "vamp"
+				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
+					(reference "A1")
+					(unit 1)
 				)
 			)
 		)
@@ -17888,7 +18520,7 @@
 			(uuid "58cd3afa-c849-4e06-9d50-15c53d0a2de8")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#FLG02")
 					(unit 1)
@@ -17966,7 +18598,7 @@
 			(uuid "b8c98a9a-b734-4c93-a0a6-3951677b2e75")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR038")
 					(unit 1)
@@ -18044,7 +18676,7 @@
 			(uuid "b3603f06-a6bb-4412-b5a0-2c7e7abc70ce")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR011")
 					(unit 1)
@@ -18054,7 +18686,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SL_Devices:Capacitor_NP")
-		(at 223.52 232.41 180)
+		(at 205.74 232.41 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18065,7 +18697,7 @@
 		(fields_autoplaced yes)
 		(uuid "7d0effee-d937-48d3-85a4-b07a5fe1b10d")
 		(property "Reference" "C16"
-			(at 223.52 224.79 0)
+			(at 205.74 224.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18075,7 +18707,7 @@
 			)
 		)
 		(property "Value" "330pF"
-			(at 223.52 227.33 0)
+			(at 205.74 227.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18085,7 +18717,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 223.52 228.6 0)
+			(at 205.74 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18096,7 +18728,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 232.41 0)
+			(at 205.74 232.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18107,7 +18739,7 @@
 			)
 		)
 		(property "Description" "Unpolarized Capacitor"
-			(at 223.52 232.41 0)
+			(at 205.74 232.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18124,7 +18756,7 @@
 			(uuid "61d5c8e2-b80e-4f63-861a-cff1dee64f5d")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C16")
 					(unit 1)
@@ -18203,7 +18835,7 @@
 			(uuid "b9c78bfc-39b3-43a7-b9e1-33180418cc0a")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C9")
 					(unit 1)
@@ -18283,7 +18915,7 @@
 			(uuid "c5a2f50a-7639-487d-8a95-35c75442021a")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW2")
 					(unit 1)
@@ -18361,7 +18993,7 @@
 			(uuid "40b62a84-6ae9-4dbc-9078-590ab9ea7be3")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR049")
 					(unit 1)
@@ -18439,7 +19071,7 @@
 			(uuid "2fea4db6-b1e6-427e-b8d5-135856ab20c4")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR024")
 					(unit 1)
@@ -18517,7 +19149,7 @@
 			(uuid "1556741c-9e62-43b3-9115-8fde683f6356")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR059")
 					(unit 1)
@@ -18595,7 +19227,7 @@
 			(uuid "43b8beba-0f8a-4a70-bf01-22e0d7bc3c44")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR035")
 					(unit 1)
@@ -18676,7 +19308,7 @@
 			(uuid "0c3634b3-96c3-4a35-9614-0420b7db7580")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C1")
 					(unit 1)
@@ -18754,7 +19386,7 @@
 			(uuid "59e5a125-13da-473d-90a4-67d0244d001d")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR065")
 					(unit 1)
@@ -18833,7 +19465,7 @@
 			(uuid "caaaf33d-b1fd-4576-9f2c-c0533c168b57")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R2")
 					(unit 1)
@@ -18922,7 +19554,7 @@
 			(uuid "09d4b81c-968e-451e-b9c5-8f5d7e72e43d")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW18")
 					(unit 1)
@@ -19001,7 +19633,7 @@
 			(uuid "71a89d73-0d04-45ec-af27-fc3f4449dfb4")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R18")
 					(unit 1)
@@ -19081,7 +19713,7 @@
 			(uuid "6d4a89ae-fdf5-4439-95a2-5fc0f4121c95")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R27")
 					(unit 1)
@@ -19159,7 +19791,7 @@
 			(uuid "eb8378fd-82e2-4fff-a220-dcf4266e2a07")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR04")
 					(unit 1)
@@ -19169,7 +19801,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SL_Devices:Capacitor_NP")
-		(at 262.89 260.35 90)
+		(at 245.11 260.35 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19180,7 +19812,7 @@
 		(fields_autoplaced yes)
 		(uuid "95931a13-0086-4537-9c74-78d5b4291057")
 		(property "Reference" "C17"
-			(at 266.7 259.0799 90)
+			(at 248.92 259.0799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19191,7 +19823,7 @@
 			)
 		)
 		(property "Value" "33nF"
-			(at 266.7 261.6199 90)
+			(at 248.92 261.6199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19202,7 +19834,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 266.7 260.35 0)
+			(at 248.92 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19213,7 +19845,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 260.35 0)
+			(at 245.11 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19224,7 +19856,7 @@
 			)
 		)
 		(property "Description" "Unpolarized Capacitor"
-			(at 262.89 260.35 0)
+			(at 245.11 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19241,7 +19873,7 @@
 			(uuid "df61430b-f0d6-4818-b606-7485dd11c467")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C17")
 					(unit 1)
@@ -19319,7 +19951,7 @@
 			(uuid "d20e4fa1-108e-48a7-88a9-284c0fe119e6")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR03")
 					(unit 1)
@@ -19397,7 +20029,7 @@
 			(uuid "a446bab3-2bea-455e-9f7d-634a90de25d9")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR052")
 					(unit 1)
@@ -19475,7 +20107,7 @@
 			(uuid "56563597-4011-41da-bcdd-5322dcc3780f")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR012")
 					(unit 1)
@@ -19554,7 +20186,7 @@
 			(uuid "80c5fc9e-7e62-4787-a4b3-14cae8de3471")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R16")
 					(unit 1)
@@ -19693,7 +20325,7 @@
 			(uuid "b4f1311c-c7ef-4ef6-8ca0-4f5e88b6e0e6")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "U3")
 					(unit 1)
@@ -19774,7 +20406,7 @@
 			(uuid "33bafa3b-4c4b-41b2-af6a-ff6bef5142f8")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C6")
 					(unit 1)
@@ -19784,7 +20416,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Resistor_AKL:R_0603")
-		(at 210.82 251.46 90)
+		(at 193.04 251.46 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19794,7 +20426,7 @@
 		(dnp no)
 		(uuid "a0cc7967-98cb-4210-b154-e62ff8c8829c")
 		(property "Reference" "R10"
-			(at 210.82 246.888 90)
+			(at 193.04 246.888 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19804,7 +20436,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 210.82 249.428 90)
+			(at 193.04 249.428 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19814,7 +20446,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0603_1608Metric"
-			(at 222.25 251.46 0)
+			(at 204.47 251.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19825,7 +20457,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 251.46 0)
+			(at 193.04 251.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19836,7 +20468,7 @@
 			)
 		)
 		(property "Description" "SMD 0603 Chip Resistor, European Symbol, Alternate KiCad Library"
-			(at 210.82 251.46 0)
+			(at 193.04 251.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19853,7 +20485,7 @@
 			(uuid "3fa27573-8571-4506-b79a-d199a75cbb2a")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R10")
 					(unit 1)
@@ -19931,7 +20563,7 @@
 			(uuid "b47d27fe-b2f4-4ab7-ae7e-6e654659d003")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR023")
 					(unit 1)
@@ -20096,7 +20728,7 @@
 			(uuid "764bd09b-157e-476a-8bf8-ac23e53fdd1c")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "U7")
 					(unit 1)
@@ -20177,7 +20809,7 @@
 			(uuid "94b28271-d6e9-422b-9122-b7ed5ddc3778")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C25")
 					(unit 1)
@@ -20255,7 +20887,7 @@
 			(uuid "556602fd-1239-4e54-afe1-29e719a1c9e3")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR039")
 					(unit 1)
@@ -20333,7 +20965,7 @@
 			(uuid "b1db7b2f-4d01-4d6e-a034-73b0172bf6f5")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR05")
 					(unit 1)
@@ -20410,7 +21042,7 @@
 			(uuid "423744c6-83ac-40d5-bb2f-ed2a9c491ab4")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR078")
 					(unit 1)
@@ -20488,7 +21120,7 @@
 			(uuid "51d717a3-8a22-4997-a464-2e2c65b8781a")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR025")
 					(unit 1)
@@ -20567,7 +21199,7 @@
 			(uuid "bada2390-3a93-4d6e-b923-d29508932c32")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R14")
 					(unit 1)
@@ -20647,7 +21279,7 @@
 			(uuid "0e64ab4c-d98c-402c-8b96-cde0ff9cf4ef")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW14")
 					(unit 1)
@@ -20725,7 +21357,7 @@
 			(uuid "d6ee950e-fcdc-44bf-b804-3527d86b767e")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR031")
 					(unit 1)
@@ -20805,7 +21437,7 @@
 			(uuid "7362fb74-522c-4072-9904-0a50b1efa8c5")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C7")
 					(unit 1)
@@ -20884,7 +21516,7 @@
 			(uuid "849b5922-e8ba-4203-98d8-74be8e32474d")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R15")
 					(unit 1)
@@ -20962,7 +21594,7 @@
 			(uuid "cf587acc-6b48-4dbf-8375-d26dc1bd4aa9")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR037")
 					(unit 1)
@@ -20972,7 +21604,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 262.89 269.24 0)
+		(at 245.11 269.24 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20983,7 +21615,7 @@
 		(fields_autoplaced yes)
 		(uuid "b88ef367-ed82-4793-bbec-93363cdc36dd")
 		(property "Reference" "#PWR047"
-			(at 262.89 275.59 0)
+			(at 245.11 275.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20994,7 +21626,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 262.89 274.32 0)
+			(at 245.11 274.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21004,7 +21636,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 262.89 269.24 0)
+			(at 245.11 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21015,7 +21647,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 269.24 0)
+			(at 245.11 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21026,7 +21658,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 262.89 269.24 0)
+			(at 245.11 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21040,7 +21672,7 @@
 			(uuid "b6d012f8-f4c0-420c-b1e3-14974746d5cb")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR047")
 					(unit 1)
@@ -21118,7 +21750,7 @@
 			(uuid "e05d090c-3709-4806-9982-e7d0547b78aa")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR064")
 					(unit 1)
@@ -21198,7 +21830,7 @@
 			(uuid "233778f2-298f-4555-ac9d-84245f62c890")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW9")
 					(unit 1)
@@ -21278,7 +21910,7 @@
 			(uuid "f69e7eb6-9b56-4c93-9bb7-01973295db07")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW12")
 					(unit 1)
@@ -21367,7 +21999,7 @@
 			(uuid "4ef4e89e-57a7-4228-9b89-e68b1863dd24")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW19")
 					(unit 1)
@@ -21445,7 +22077,7 @@
 			(uuid "1707384d-de70-4237-bdc2-1d12ba6f3cdd")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR020")
 					(unit 1)
@@ -21526,7 +22158,7 @@
 			(uuid "03c78601-3279-41a1-b0cd-82bc561f44d5")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C26")
 					(unit 1)
@@ -21606,7 +22238,7 @@
 			(uuid "02d007ba-b71d-495b-8425-9ae17f6a4891")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW7")
 					(unit 1)
@@ -21616,7 +22248,7 @@
 	)
 	(symbol
 		(lib_id "easyeda2kicad:OPA1652AIDR")
-		(at 149.86 251.46 0)
+		(at 144.78 251.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21624,10 +22256,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ce4745fc-f482-4f04-a8f1-78ad15612227")
 		(property "Reference" "U8"
-			(at 162.56 245.0398 0)
+			(at 144.526 235.204 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21637,7 +22268,7 @@
 			)
 		)
 		(property "Value" "OPA1652AIDR"
-			(at 162.56 247.5798 0)
+			(at 144.526 237.744 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21647,7 +22278,7 @@
 			)
 		)
 		(property "Footprint" "easyeda2kicad:SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL"
-			(at 149.86 269.24 0)
+			(at 144.78 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21658,7 +22289,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Audio-OpAmps_TI_OPA1652AIDR_OPA1652AIDR_C30025.html"
-			(at 149.86 271.78 0)
+			(at 144.78 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21669,7 +22300,7 @@
 			)
 		)
 		(property "Description" "Sound Plus Low Noise and Distortion, General-Purpose, FET-Input Audio Operational Amplifier, 4.5 to 36 V, -40 to 85 degC, 8-pin SOIC (D8), Green (RoHS  no SbBr)"
-			(at 149.86 251.46 0)
+			(at 144.78 251.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21680,7 +22311,7 @@
 			)
 		)
 		(property "Manufacturer" "TI(德州仪器)"
-			(at 149.86 274.32 0)
+			(at 144.78 274.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21691,7 +22322,7 @@
 			)
 		)
 		(property "MPN" "OPA1652AIDR"
-			(at 149.86 276.86 0)
+			(at 144.78 276.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21702,7 +22333,7 @@
 			)
 		)
 		(property "LCSC Part" "C30025"
-			(at 149.86 279.4 0)
+			(at 144.78 279.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21743,7 +22374,7 @@
 			(uuid "a4193222-ffa6-4056-9540-eeaf601cb29d")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "U8")
 					(unit 1)
@@ -21823,7 +22454,7 @@
 			(uuid "6dd8b2f4-adda-4012-937a-e5822ecec908")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW5")
 					(unit 1)
@@ -21902,7 +22533,7 @@
 			(uuid "1b72b549-1873-4720-af11-8ed69aafbc24")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R5")
 					(unit 1)
@@ -21984,7 +22615,7 @@
 			(uuid "ed5a950d-6daf-4c1a-b8b5-ecba107715e4")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C21")
 					(unit 1)
@@ -22088,7 +22719,7 @@
 			(uuid "a9dd413e-e763-44ee-8333-45fc26e093cb")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "U5")
 					(unit 1)
@@ -22167,7 +22798,7 @@
 			(uuid "93883c69-602d-4eae-8233-a322b8eb5c69")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R7")
 					(unit 1)
@@ -22245,7 +22876,7 @@
 			(uuid "269acef6-96f1-4c49-bad5-c9bd3c5356d1")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR068")
 					(unit 1)
@@ -22323,7 +22954,7 @@
 			(uuid "7626e5b5-8bc1-4e07-8b98-9cf151a15a89")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR067")
 					(unit 1)
@@ -22333,7 +22964,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Resistor_AKL:R_0603")
-		(at 254 254 90)
+		(at 236.22 254 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22343,7 +22974,7 @@
 		(dnp no)
 		(uuid "d5323930-94d3-455f-acbb-08327c3dbab2")
 		(property "Reference" "R12"
-			(at 254 249.428 90)
+			(at 236.22 249.428 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22353,7 +22984,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 254 251.968 90)
+			(at 236.22 251.968 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22363,7 +22994,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0603_1608Metric"
-			(at 265.43 254 0)
+			(at 247.65 254 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22374,7 +23005,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 254 0)
+			(at 236.22 254 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22385,7 +23016,7 @@
 			)
 		)
 		(property "Description" "SMD 0603 Chip Resistor, European Symbol, Alternate KiCad Library"
-			(at 254 254 0)
+			(at 236.22 254 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22402,7 +23033,7 @@
 			(uuid "51c1a914-da6c-4441-91d9-6fb2a729e3d2")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R12")
 					(unit 1)
@@ -22480,7 +23111,7 @@
 			(uuid "b600cb73-70ca-41fc-b67f-da338e6c6eaf")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR021")
 					(unit 1)
@@ -22571,7 +23202,7 @@
 			(uuid "3e59e1df-9a44-4314-89b1-56b1ad109d52")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "MK2")
 					(unit 1)
@@ -22649,7 +23280,7 @@
 			(uuid "927fc8fa-0ab4-4e59-a74c-22f4d10df24b")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR048")
 					(unit 1)
@@ -22740,7 +23371,7 @@
 			(uuid "a099f237-9120-4f18-ae92-3123d1cf9f98")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "MK1")
 					(unit 1)
@@ -22818,7 +23449,7 @@
 			(uuid "cff6cb4b-ab6e-4e4e-9277-233522f30703")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR042")
 					(unit 1)
@@ -22896,7 +23527,7 @@
 			(uuid "a6308f08-62d9-4447-b5b1-fb9ef6eb4ad3")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR057")
 					(unit 1)
@@ -22906,7 +23537,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SL_Devices:Capacitor_NP")
-		(at 181.61 257.81 90)
+		(at 168.91 257.81 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22917,7 +23548,7 @@
 		(fields_autoplaced yes)
 		(uuid "db90b521-df2f-4a92-ba31-9ff2a9bdd6c2")
 		(property "Reference" "C14"
-			(at 185.42 256.5399 90)
+			(at 172.72 256.5399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22928,7 +23559,7 @@
 			)
 		)
 		(property "Value" "1nF"
-			(at 185.42 259.0799 90)
+			(at 172.72 259.0799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22939,7 +23570,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 185.42 257.81 0)
+			(at 172.72 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22950,7 +23581,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 257.81 0)
+			(at 168.91 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22961,7 +23592,7 @@
 			)
 		)
 		(property "Description" "Unpolarized Capacitor"
-			(at 181.61 257.81 0)
+			(at 168.91 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22978,7 +23609,7 @@
 			(uuid "7bb03e83-e074-4b83-b6b7-53e107acdb3f")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C14")
 					(unit 1)
@@ -23056,7 +23687,7 @@
 			(uuid "9c674136-e078-477c-a6a6-f0fdcc195fcd")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR060")
 					(unit 1)
@@ -23134,7 +23765,7 @@
 			(uuid "ba253d7d-bede-452d-9f3e-9f24f4bd8d18")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR08")
 					(unit 1)
@@ -23214,7 +23845,7 @@
 			(uuid "630dab38-2652-47d2-b644-5e9ffba4bcc8")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW13")
 					(unit 1)
@@ -23292,7 +23923,7 @@
 			(uuid "42030130-bb02-40c4-99a0-9f989250138a")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR017")
 					(unit 1)
@@ -23370,7 +24001,7 @@
 			(uuid "30fe6771-9a2b-418e-ba98-114179e54d4d")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR058")
 					(unit 1)
@@ -23448,7 +24079,7 @@
 			(uuid "da2b59b0-b0d7-4e94-ba6f-c7810f49873f")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR010")
 					(unit 1)
@@ -23526,7 +24157,7 @@
 			(uuid "73ead85b-9819-4539-933d-7f0cf3ad5246")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR034")
 					(unit 1)
@@ -23606,7 +24237,7 @@
 			(uuid "787c2c46-4314-4c64-b2af-67b31915befc")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW10")
 					(unit 1)
@@ -23685,7 +24316,7 @@
 			(uuid "344f4628-3a3a-49fd-90cb-2a9b7c18eaa6")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R17")
 					(unit 1)
@@ -23764,7 +24395,7 @@
 			(uuid "31326b1b-9cb8-4d10-8711-97945e058a5d")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R19")
 					(unit 1)
@@ -23842,7 +24473,7 @@
 			(uuid "24037833-8e8e-445c-835d-2d024f53c645")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR045")
 					(unit 1)
@@ -23852,7 +24483,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Resistor_AKL:R_0603")
-		(at 223.52 241.3 90)
+		(at 205.74 241.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23862,7 +24493,7 @@
 		(dnp no)
 		(uuid "f00f9395-8c56-4edc-a0e2-b1ff247235e5")
 		(property "Reference" "R11"
-			(at 223.52 236.728 90)
+			(at 205.74 236.728 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23872,7 +24503,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 223.52 239.268 90)
+			(at 205.74 239.268 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23882,7 +24513,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0603_1608Metric"
-			(at 234.95 241.3 0)
+			(at 217.17 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23893,7 +24524,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 241.3 0)
+			(at 205.74 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23904,7 +24535,7 @@
 			)
 		)
 		(property "Description" "SMD 0603 Chip Resistor, European Symbol, Alternate KiCad Library"
-			(at 223.52 241.3 0)
+			(at 205.74 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23921,7 +24552,7 @@
 			(uuid "bdbbe4e2-7631-4b82-840e-62142f5d465c")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "R11")
 					(unit 1)
@@ -23999,7 +24630,7 @@
 			(uuid "327ae8d8-e9f6-47b4-8b7c-8fbb373d70c6")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR036")
 					(unit 1)
@@ -24079,7 +24710,7 @@
 			(uuid "3708a326-566a-4ce6-a32e-1e6606e979f9")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW15")
 					(unit 1)
@@ -24089,7 +24720,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 187.96 270.51 0)
+		(at 175.26 270.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24100,7 +24731,7 @@
 		(fields_autoplaced yes)
 		(uuid "f1ea7717-3fef-4469-89c2-96fbebebc811")
 		(property "Reference" "#PWR046"
-			(at 187.96 276.86 0)
+			(at 175.26 276.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24111,7 +24742,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 187.96 275.59 0)
+			(at 175.26 275.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24121,7 +24752,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 187.96 270.51 0)
+			(at 175.26 270.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24132,7 +24763,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.96 270.51 0)
+			(at 175.26 270.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24143,7 +24774,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 187.96 270.51 0)
+			(at 175.26 270.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24157,7 +24788,7 @@
 			(uuid "fb0beeff-4d19-4c51-a946-3f0912acd9d9")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR046")
 					(unit 1)
@@ -24237,7 +24868,7 @@
 			(uuid "ba2bb643-dfad-4284-b3aa-9753bea6e77c")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW11")
 					(unit 1)
@@ -24315,7 +24946,7 @@
 			(uuid "fc12e7d1-1838-4f94-bdee-fa81612d2b0a")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR029")
 					(unit 1)
@@ -24397,7 +25028,7 @@
 			(uuid "b12fbc9b-417c-466d-87ff-83e1cbd432d4")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C13")
 					(unit 1)
@@ -24477,7 +25108,7 @@
 			(uuid "d21636c4-4e6e-4656-a4b1-c501c88b422a")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "SW3")
 					(unit 1)
@@ -24555,7 +25186,7 @@
 			(uuid "f60298bb-dce1-41e6-886b-812f406d3c97")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR056")
 					(unit 1)
@@ -24635,7 +25266,7 @@
 			(uuid "acb6079e-9821-4bb7-9c93-c83e32f07670")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "C20")
 					(unit 1)
@@ -24722,7 +25353,7 @@
 			(uuid "403b7dd5-cd17-4c33-9e81-76d96ab22f13")
 		)
 		(instances
-			(project "petal"
+			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "U2")
 					(unit 1)

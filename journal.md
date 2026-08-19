@@ -120,3 +120,5 @@ I decided to add two of them for stereo!
 **Schematic:**
 
 **PCB**
+
+I polished the README some more, and I looked over the repository one more time to make sure everything was in order. This is sort of the final opportunity to ship something, so...
