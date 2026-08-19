@@ -5,6 +5,15 @@
 
 An experimental, intuitive sampler synth, based with Daisy Seed 3. Pocket sized and equipped with an onboard sampling mic.
 
+## About
+A VAMP is a repeated four-chord progression. A vampire is a creature of myth that drinks blood, probably among other things. (I think some of them sparkle. I'm not very clear on this.)  
+
+**VAMP by syntonos** is a play on both of those definitions. Take the lifeblood of a sound, then build a creature of your own with it. Built for field sampling and on-the-go chord construction, with an onboard microphone and headphone port.
+
+At its most basic, I'd like it to be able to take a sample and pitch shift it to match each of the octave's keys + modulation with sampling and playback with the knobs & joystick (time dilation, pitch, reverb, distortion, sampling bitrate). There would also be a looper. (I'm coding this already, it should be done by the time the build is approved, but I do need the physical sampler to test the code.) At its best (might take a while for me to research the music theory and then code), I'd like for it to be able to recognize chords based on keys played and then have the joystick be able to modify it (inversions, substitutions, etc). It would be an interesting way to apply polyphony and sampling, and it would make VAMP a unique, experimental chord builder.
+
+This whole set of synths is mostly because I do want to make music, and I want an instrument that works for me. I'm also very interested in digital signal processing, and this teaches both. Inspired by a ton of samplers currenly out (AKAI MPC Sample, CHOMPI, PO33-KO). I wanted this to be portable and pocketable, and this technically is if you have big pockets. (Also working on a tiny little portable battery to accompany this, it currently can be used attached to any USB-C 5V 1A source).
+
 ## Features
 - 8-note keyboard + 4 layers to toggle through.
 - 4 rotary encoders + an analog joystick for sound modulation. 
@@ -14,13 +23,6 @@ An experimental, intuitive sampler synth, based with Daisy Seed 3. Pocket sized 
 - Onboard omnidirectional stereo microphone with additional LINE IN options.
 - Up to ten minutes of sampling time with the Daisy Seed. 
 - USB-C 5V 1A power. 
-
-## Origin
-A VAMP is a repeated four-chord progression. A vampire is a creature of myth that drinks blood, probably among other things. (I think some of them sparkle. I'm not very clear on this.)  
-
-At its most basic, I'd like it to be able to take a sample and pitch shift it to match each of the octave's keys + modulation with sampling and playback with the knobs & joystick. There would also be a looper. (I'm coding this already, it should be done by the time the build is approved, but I do need the physical sampler to test the code.) At its best (might take a while for me to research the music theory and then code), I'd like for it to be able to recognize chords based on keys played and then have the joystick be able to modify it (inversions, substitutions, etc). It would be an interesting way to apply polyphony and sampling, and it would make VAMP a unique, experimental chord builder.
-
-This whole set of synths is mostly because I do want to make music, and I want an instrument that works for me. I'm also very interested in digital signal processing, and this teaches both. Inspired by a ton of samplers currenly out (AKAI MPC Sample, CHOMPI, PO33-KO). I wanted this to be portable and pocketable, and this technically is if you have big pockets. (Also working on a tiny little portable battery to accompany this, it currently can be used attached to any USB-C 5V 1A source).
 
 ## Assembly Instructions + Flashing Firmware
 
