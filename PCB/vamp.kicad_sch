@@ -2841,7 +2841,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Interface_Expansion:MCP23017x-x-ML"
+		(symbol "Interface_Expansion:MCP23S17x-x-ML"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2857,7 +2857,7 @@
 					)
 				)
 			)
-			(property "Value" "MCP23017x-x-ML"
+			(property "Value" "MCP23S17x-x-ML"
 				(at 11.176 24.638 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2879,7 +2879,7 @@
 					(justify left)
 				)
 			)
-			(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf"
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf"
 				(at 5.08 -27.94 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2891,7 +2891,7 @@
 					(justify left)
 				)
 			)
-			(property "Description" "16-bit I/O expander, I2C, interrupts, w pull-ups, GPA7/GPB7 output only (https://microchip.my.site.com/s/article/GPA7---GPB7-Cannot-Be-Used-as-Inputs-In-MCP23017), QFN-28"
+			(property "Description" "16-bit I/O expander, SPI, interrupts, w pull-ups, QFN-28"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2924,7 +2924,7 @@
 					)
 				)
 			)
-			(symbol "MCP23017x-x-ML_0_1"
+			(symbol "MCP23S17x-x-ML_0_1"
 				(rectangle
 					(start -10.16 22.86)
 					(end 10.16 -22.86)
@@ -2937,7 +2937,7 @@
 					)
 				)
 			)
-			(symbol "MCP23017x-x-ML_1_1"
+			(symbol "MCP23S17x-x-ML_1_1"
 				(pin bidirectional line
 					(at 12.7 -12.7 180)
 					(length 2.54)
@@ -2992,7 +2992,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin bidirectional line
 					(at 12.7 -20.32 180)
 					(length 2.54)
 					(name "GPB7"
@@ -3046,11 +3046,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -10.16 15.24 0)
+				(pin input line
+					(at -12.7 20.32 0)
 					(length 2.54)
-					(hide yes)
-					(name "NC"
+					(name "~{CS}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3066,7 +3065,7 @@
 					)
 				)
 				(pin input line
-					(at -12.7 20.32 0)
+					(at -12.7 17.78 0)
 					(length 2.54)
 					(name "SCK"
 						(effects
@@ -3083,10 +3082,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 17.78 0)
+				(pin input line
+					(at -12.7 15.24 0)
 					(length 2.54)
-					(name "SDA"
+					(name "SI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3101,11 +3100,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -10.16 12.7 0)
+				(pin output line
+					(at -12.7 12.7 0)
 					(length 2.54)
-					(hide yes)
-					(name "NC"
+					(name "SO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3354,7 +3352,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin bidirectional line
 					(at 12.7 2.54 180)
 					(length 2.54)
 					(name "GPA7"
@@ -13169,171 +13167,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Interface_Expansion:MCP23017x-x-ML")
-		(at 321.31 63.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "17f1e491-8390-449a-98e7-297d594a42ad")
-		(property "Reference" "U6"
-			(at 323.4533 35.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP23017x-x-ML"
-			(at 323.4533 38.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_6x6mm_P0.65mm_EP4.25x4.25mm"
-			(at 326.39 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf"
-			(at 326.39 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "16-bit I/O expander, I2C, interrupts, w pull-ups, GPA7/GPB7 output only (https://microchip.my.site.com/s/article/GPA7---GPB7-Cannot-Be-Used-as-Inputs-In-MCP23017), QFN-28"
-			(at 321.31 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "10"
-			(uuid "c7cf8306-ae9f-41cf-a943-8a3731b7700e")
-		)
-		(pin "19"
-			(uuid "fca67df0-7e37-404a-8ea7-d945d5a7b48b")
-		)
-		(pin "6"
-			(uuid "8c2e2ba5-7725-4bde-be39-7f136bbf2b44")
-		)
-		(pin "23"
-			(uuid "1b1a5212-1070-4e63-9709-0a677674e6d7")
-		)
-		(pin "26"
-			(uuid "4be15f84-7c37-4db5-878a-fc317cfbfa9e")
-		)
-		(pin "28"
-			(uuid "ef75d8ae-4faf-4d02-a68c-7a85c4e6453b")
-		)
-		(pin "13"
-			(uuid "fa8bdc06-2748-4bd4-9e2b-6023c742b78a")
-		)
-		(pin "14"
-			(uuid "ce08c1ce-c049-4439-9262-ee2b0c872311")
-		)
-		(pin "4"
-			(uuid "818e52b6-71ff-403a-af43-faf67e6da49b")
-		)
-		(pin "5"
-			(uuid "a3fbbb4b-6b42-45b3-a36a-6f1baa401c96")
-		)
-		(pin "18"
-			(uuid "812a8a6e-5ec1-4be0-a50c-852295ab4660")
-		)
-		(pin "24"
-			(uuid "0212ff27-8402-4563-9a3d-8260b43981c6")
-		)
-		(pin "15"
-			(uuid "1879fd3d-0916-4cd6-a4a7-c3033fcac101")
-		)
-		(pin "2"
-			(uuid "e3b55de3-3d58-4149-8e2f-df2180448e87")
-		)
-		(pin "20"
-			(uuid "cfb74e17-5f56-4abd-b007-d70b6a230220")
-		)
-		(pin "27"
-			(uuid "57e12c0b-6958-4c24-beb8-f0a6afc048fb")
-		)
-		(pin "17"
-			(uuid "c8a09428-7cef-4bcc-bc9d-b3b08357797f")
-		)
-		(pin "1"
-			(uuid "dead80ed-94ea-41ec-b903-8be2f2e3e0b4")
-		)
-		(pin "7"
-			(uuid "4ba1d74d-fbcd-4267-bc7b-daafd668c4f4")
-		)
-		(pin "9"
-			(uuid "045bb28e-5c23-43ca-8c65-93e4ee23bb41")
-		)
-		(pin "16"
-			(uuid "82fb893c-f1b3-41e0-827a-0495611e96ca")
-		)
-		(pin "11"
-			(uuid "aae2f68f-37a4-4cbe-b27c-fe8a9bea1dd3")
-		)
-		(pin "8"
-			(uuid "7e668543-81ad-4c87-9bca-22afe0326898")
-		)
-		(pin "3"
-			(uuid "717bf5a7-20a2-4e67-9d7b-9288ff190628")
-		)
-		(pin "12"
-			(uuid "585ccdf1-1ae7-4a6f-bca6-bdb0abc43d37")
-		)
-		(pin "21"
-			(uuid "bd3dbf97-22d5-4323-87cc-27734c865370")
-		)
-		(pin "22"
-			(uuid "5652ca4f-4556-416b-8a81-f5de20552ee3")
-		)
-		(pin "25"
-			(uuid "3854f5b8-e382-462d-8819-02818d0918a3")
-		)
-		(pin "29"
-			(uuid "c57867d4-e623-4692-8725-df51b0166c3f")
-		)
-		(instances
-			(project "vamp"
-				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
-					(reference "U6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 344.17 187.96 0)
 		(unit 1)
@@ -16626,6 +16459,171 @@
 			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "MIDIIN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Interface_Expansion:MCP23S17x-x-ML")
+		(at 321.31 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5355067a-bc52-4cba-82cc-19b5ec5bee35")
+		(property "Reference" "U6"
+			(at 323.4533 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP23S17x-x-ML"
+			(at 323.4533 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_6x6mm_P0.65mm_EP4.25x4.25mm"
+			(at 326.39 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf"
+			(at 326.39 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "16-bit I/O expander, SPI, interrupts, w pull-ups, QFN-28"
+			(at 321.31 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "15"
+			(uuid "b4261351-3a6a-48e3-b153-cfc682bb59a2")
+		)
+		(pin "10"
+			(uuid "e2fac52b-04a6-4b81-80aa-56a60b8a970f")
+		)
+		(pin "1"
+			(uuid "1bb8d706-82d2-4e58-b102-858b67fdbcac")
+		)
+		(pin "7"
+			(uuid "3857bcb1-b017-4ffa-aabc-19dbb9c2c302")
+		)
+		(pin "13"
+			(uuid "8ca067a5-c96a-4930-bdb4-3d08c37918b0")
+		)
+		(pin "5"
+			(uuid "18a67191-b055-4d6c-8cde-e4b944dade50")
+		)
+		(pin "12"
+			(uuid "83b37ca1-585b-48e5-854e-8882de8b0be5")
+		)
+		(pin "8"
+			(uuid "75dd893b-61ca-44d4-8737-1ecf8de5b709")
+		)
+		(pin "18"
+			(uuid "05e24de2-e0c9-49b7-8a06-26298513b9dc")
+		)
+		(pin "14"
+			(uuid "91fa5fe7-fc3c-451a-925e-413fde340983")
+		)
+		(pin "2"
+			(uuid "5843dcb7-b321-4611-a594-108404ba8064")
+		)
+		(pin "19"
+			(uuid "900f39b2-eff1-4fe2-a2d4-a5f703d69b59")
+		)
+		(pin "3"
+			(uuid "4aa77625-06cd-4801-b431-058aab53dc12")
+		)
+		(pin "9"
+			(uuid "75686f21-b1e5-4d58-9b22-f2860450ae9d")
+		)
+		(pin "16"
+			(uuid "d11a6b80-a2bc-44e7-b7f4-e03582800fce")
+		)
+		(pin "20"
+			(uuid "64c8b7e7-8afe-4b91-9ceb-2a966953506a")
+		)
+		(pin "24"
+			(uuid "1629c87d-48f1-43d9-b2ff-d38862eddd90")
+		)
+		(pin "26"
+			(uuid "6eafb367-6e29-48d0-a423-015339c31256")
+		)
+		(pin "6"
+			(uuid "a8b4c708-ec06-4210-9ba9-7c041a4aedaf")
+		)
+		(pin "11"
+			(uuid "cad01808-487c-4fee-8565-a71dc349fafc")
+		)
+		(pin "22"
+			(uuid "1654882a-d811-4d5d-a8c9-d8f11131ba37")
+		)
+		(pin "23"
+			(uuid "73762996-5cf9-4e2c-93da-0055569eb6d2")
+		)
+		(pin "4"
+			(uuid "b5612eb8-7189-4edf-bee9-702beb729576")
+		)
+		(pin "17"
+			(uuid "796d7416-98f9-4234-80d5-7970061a6be0")
+		)
+		(pin "27"
+			(uuid "ca97c237-ad7e-4245-9f6c-e66eea319aaa")
+		)
+		(pin "28"
+			(uuid "61b1fa72-a21d-46ed-9516-0c6b29385695")
+		)
+		(pin "29"
+			(uuid "5f3e6cc7-7d6f-44c2-a06a-b8dcc614127a")
+		)
+		(pin "21"
+			(uuid "e79ef4cb-6c33-4f41-b3f9-107b85673fec")
+		)
+		(pin "25"
+			(uuid "a1af1d49-acaf-4b3a-a6b3-df37228a1c8f")
+		)
+		(instances
+			(project "vamp"
+				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -20195,6 +20193,171 @@
 		)
 	)
 	(symbol
+		(lib_id "Interface_Expansion:MCP23S17x-x-ML")
+		(at 370.84 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d0ea728-5d87-43de-bd3e-e8ba79af1180")
+		(property "Reference" "U7"
+			(at 372.9833 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP23S17x-x-ML"
+			(at 372.9833 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_6x6mm_P0.65mm_EP4.25x4.25mm"
+			(at 375.92 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf"
+			(at 375.92 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "16-bit I/O expander, SPI, interrupts, w pull-ups, QFN-28"
+			(at 370.84 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "15"
+			(uuid "6e64c72d-dd54-469f-ae76-e2b33aeddffb")
+		)
+		(pin "10"
+			(uuid "821cc1ec-e0bc-4f39-8317-4ebf735800e0")
+		)
+		(pin "1"
+			(uuid "2b459f3d-8798-407b-9f8f-b3d5fefc6ff2")
+		)
+		(pin "7"
+			(uuid "a0bcaf03-976b-40f4-a37a-957b8767af8a")
+		)
+		(pin "13"
+			(uuid "001e4e03-6515-4d62-8274-0fb77850a9d6")
+		)
+		(pin "5"
+			(uuid "84d3781b-72dd-4a87-8601-3ac4ee49b2a5")
+		)
+		(pin "12"
+			(uuid "a21e2b0c-3492-4aef-ae95-dc755988f4df")
+		)
+		(pin "8"
+			(uuid "d29db0b3-5ff4-43f9-84ff-505af2eaa958")
+		)
+		(pin "18"
+			(uuid "a6349eb7-7ca4-472b-a952-6c50435ec2af")
+		)
+		(pin "14"
+			(uuid "53d2f437-f43a-4318-ad96-1ad8554ec59d")
+		)
+		(pin "2"
+			(uuid "ac2cb8bc-a735-469c-8001-d264bc9b29b5")
+		)
+		(pin "19"
+			(uuid "41199e91-0d79-4dd5-84ec-e72e13c3fb3a")
+		)
+		(pin "3"
+			(uuid "ee5432ca-19b7-4fc6-b65b-3febf088850e")
+		)
+		(pin "9"
+			(uuid "1d57efaf-48fe-46a9-9ef6-f33daa9b854d")
+		)
+		(pin "16"
+			(uuid "564f56f5-ed64-455b-a91c-ac8291e08def")
+		)
+		(pin "20"
+			(uuid "0d9f829c-8399-417a-8ebb-da8d76988aea")
+		)
+		(pin "24"
+			(uuid "069eaa99-2524-4949-8fbd-e2f368571355")
+		)
+		(pin "26"
+			(uuid "f64ae9de-ab44-4d2c-935d-fd43d4f851d3")
+		)
+		(pin "6"
+			(uuid "71ae038d-1def-4f6a-ba9d-2112b116dccf")
+		)
+		(pin "11"
+			(uuid "f648c23b-eb7e-49ba-a314-6f64d8dac507")
+		)
+		(pin "22"
+			(uuid "28f8f703-ae87-42d4-8e90-348ba3683436")
+		)
+		(pin "23"
+			(uuid "3c645d36-e6c5-4313-9a5f-864bd7b02673")
+		)
+		(pin "4"
+			(uuid "c7fb2863-069f-42ef-90b5-dc9e7bb72d7c")
+		)
+		(pin "17"
+			(uuid "6acd9f1c-2a77-4a6b-abc6-605728deda3b")
+		)
+		(pin "27"
+			(uuid "f1e2ddfc-39f5-48fe-bf93-e8bfcc96fd07")
+		)
+		(pin "28"
+			(uuid "7733da0e-4506-4d61-bf0c-dbbc39fe75fd")
+		)
+		(pin "29"
+			(uuid "3bf8bea4-6e42-4161-a605-cbae1ad45090")
+		)
+		(pin "21"
+			(uuid "0ad0fbe8-96c1-4c20-8fdb-d5c2db444362")
+		)
+		(pin "25"
+			(uuid "4db07595-654a-467d-a141-e7394fde744a")
+		)
+		(instances
+			(project "vamp"
+				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "easyeda2kicad:YV13S-L7.85-B10KA")
 		(at 35.56 217.17 0)
 		(unit 1)
@@ -20566,171 +20729,6 @@
 			(project "vamp"
 				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
 					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Interface_Expansion:MCP23017x-x-ML")
-		(at 370.84 63.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a4da1ac9-552f-4d7d-9282-052cd467a5b4")
-		(property "Reference" "U7"
-			(at 372.9833 35.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP23017x-x-ML"
-			(at 372.9833 38.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:QFN-28-1EP_6x6mm_P0.65mm_EP4.25x4.25mm"
-			(at 375.92 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf"
-			(at 375.92 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "16-bit I/O expander, I2C, interrupts, w pull-ups, GPA7/GPB7 output only (https://microchip.my.site.com/s/article/GPA7---GPB7-Cannot-Be-Used-as-Inputs-In-MCP23017), QFN-28"
-			(at 370.84 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "10"
-			(uuid "00021cd8-d58b-4e9e-a338-69073b76c0fb")
-		)
-		(pin "19"
-			(uuid "db576b4c-cd8b-488b-b71f-2cd7ba7a92bf")
-		)
-		(pin "6"
-			(uuid "fa10d3e3-64a5-40a3-8566-b97d8c25f736")
-		)
-		(pin "23"
-			(uuid "3b5d3d1f-ddc4-46b9-8894-e37ea78bf405")
-		)
-		(pin "26"
-			(uuid "ad89e96e-e903-4a1e-b869-46c1ff48dd83")
-		)
-		(pin "28"
-			(uuid "bd2ea696-8611-43fb-b1cf-22f9e6115a3d")
-		)
-		(pin "13"
-			(uuid "02c8db8d-2699-44cf-87b2-32a6aa8bcfda")
-		)
-		(pin "14"
-			(uuid "cde9587e-c15b-41f8-b7de-c2b8199635d1")
-		)
-		(pin "4"
-			(uuid "19dc82f4-4562-48f3-b90c-65be1d4ad7cd")
-		)
-		(pin "5"
-			(uuid "1ee40d42-2e3a-44c1-95d1-404c3faaf81d")
-		)
-		(pin "18"
-			(uuid "29ed00c8-143b-4996-a3ff-9ff6d4ea19a0")
-		)
-		(pin "24"
-			(uuid "d29123ba-ef81-448f-a1af-8d2540e8374e")
-		)
-		(pin "15"
-			(uuid "2e7daa65-deda-45d3-adcf-4a7b3563b6b8")
-		)
-		(pin "2"
-			(uuid "999d38cd-0132-41b9-8118-078b181b08ba")
-		)
-		(pin "20"
-			(uuid "5f36b56f-c7e2-4167-ae31-46c0d5f76b2f")
-		)
-		(pin "27"
-			(uuid "f101cdf4-70f8-4c67-8ee0-53277ff17726")
-		)
-		(pin "17"
-			(uuid "2c47422c-de76-4322-8bee-0528c0fcd3a9")
-		)
-		(pin "1"
-			(uuid "4f858f10-b3a6-49ac-853c-10bba6692488")
-		)
-		(pin "7"
-			(uuid "83252998-c5ba-4e64-89bf-0e195db5323d")
-		)
-		(pin "9"
-			(uuid "07a2cac2-a429-4de6-85f9-d2f5801afb0b")
-		)
-		(pin "16"
-			(uuid "8d4cb684-cbf8-4bf8-98a1-324a6698c161")
-		)
-		(pin "11"
-			(uuid "84137e0a-7c02-4a5e-a12a-e9b40dc298cd")
-		)
-		(pin "8"
-			(uuid "fdac875c-7fe8-4e1d-bf0c-90f1d4e628e2")
-		)
-		(pin "3"
-			(uuid "f9fd3fa5-1077-41de-bbc4-54b26e9f6dd3")
-		)
-		(pin "12"
-			(uuid "8f4621a4-3aef-4d00-9ace-b64c766a7ba7")
-		)
-		(pin "21"
-			(uuid "0230cf91-11b3-4733-a4a8-d9452bedc385")
-		)
-		(pin "22"
-			(uuid "90664b00-ec6b-41b7-9cf2-09675e19002f")
-		)
-		(pin "25"
-			(uuid "0909aa7b-10ac-4df6-9f3a-8f706fa69c55")
-		)
-		(pin "29"
-			(uuid "764bd09b-157e-476a-8bf8-ac23e53fdd1c")
-		)
-		(instances
-			(project "vamp"
-				(path "/c41a88ee-aff1-47d9-83ac-749eff8f9183"
-					(reference "U7")
 					(unit 1)
 				)
 			)
