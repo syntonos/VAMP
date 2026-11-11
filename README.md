@@ -1,5 +1,5 @@
 # VAMP | by synotonos
-![image](/Images/vamp_3d_front.png)
+![image](/Images/vamp_3d_top.png)
 
 **Sample, synthesize, VAMP.** 
 
